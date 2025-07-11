@@ -1,0 +1,644 @@
+/* Reset dasar*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+
+  /* setelan umum untuk body */
+}
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #E9D7C0;
+  color: #670626;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header kecil pojok kiri atas */
+.header-kecil {
+position: absolute;
+top: 10px;
+left: 20px;
+font-size: 14px;
+color: #E9D7C0 ;
+}
+
+/* Header bagian judul merk + link lihat semua */
+.header-rekomendasi {
+display: flex;
+font-weight: bold;
+justify-content: space-between;
+align-items: center;
+margin: 30px 20px 10px;
+}
+
+/* Judul merk (besar) */
+.judul-merk {
+font-size: 24px;
+font-weight: bold;
+color:  #670626;
+margin: 0;
+padding: 0;
+background: none;
+box-shadow: none;
+}
+.judul-rekomendasi {
+  font-size: 32px;
+  font-weight: bold;
+  color: #E9D7C0;
+  margin: 30px 20px 10px;
+}
+/* Judul besar halaman */
+.judul-besar {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #E9D7C0;
+}
+header {
+  background-color:  #670626;
+  padding: 60px 20px 20px 20px;
+  text-align: center;
+  color: #777;
+  position: relative;
+}  
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+nav a {
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background-color:  #670626;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+nav a:hover {
+  opacity: 0.8;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.produk-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+.produk {
+  background-color: whitesmoke;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 240px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.produk:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+.produk img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.produk h3 {
+  color: #670626;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+.deskripsi {
+  font-size: 0.9em;
+  margin-bottom: 8px;
+  color: #777;
+}
+.harga {
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: black !important;
+}
+.beli-btn {
+  background-color: #670626;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  }
+.beli-btn:hover {
+background-color: #E2B091;
+}
+
+.beli-btn:hover {
+  background-color: #E2B091 ;
+}
+
+/* Footer */
+footer {
+  background-color: #E9D7C0;
+  padding: 15px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
+}
+.welcome-section {
+  background-color: #8D6E63;
+  padding: 40px 20px;
+  text-align: center;
+}
+.welcome-text h2 {
+  font-size: 2rem;
+  color: #6d4c41;
+}
+.welcome-text p {
+  font-size: 1.1rem;
+  color: #5d4037;
+}
+/* Keranjang Ikon */
+.keranjang-ikon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 20px;
+}
+.merk-container {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+padding: 0 10px;
+}
+main {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+.merk.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Gambar produk */
+.merk.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+/* Tautan lihat selengkapnya */
+.lihat-selengkapnya {
+  font-size: 14px;
+  text-decoration: none;
+  color: #670626;
+  font-weight: bold;
+  transition: color 0.3s;
+  }
+  
+  .lihat-selengkapnya:hover {
+  color: #670626;
+  }
+  
+  /* Kontainer dan scroll */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }  
+  .carousel-container {
+  overflow-x: auto;
+  padding: 20px 30px 10px;
+  border-top: 2px solid #ccc; 
+  border-bottom: 2px solid #ccc; 
+  }
+  .carousel {
+  display: flex;
+  gap: 16px;
+  }
+  
+  .merk-card {
+  min-width: 220px;
+  max-width: 220px;
+  flex-shrink: 0;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  }
+  
+  .merk-card:hover {
+  transform: translateY(-4px);
+  }
+  
+  .merk-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  }
+  
+  .merk-card h3 {
+  margin: 8px 0 4px;
+  font-size: 18px;
+  color: #333;
+  }
+  
+  .merk-card p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 12px;
+  }
+  
+  /* Tombol selengkapnya */
+  .selengkapnya-btn {
+  background-color: #670626;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  }
+  .selengkapnya-btn:hover {
+  background-color: #670626;
+  }
+  
+  /* Scrollbar */
+  .carousel-container::-webkit-scrollbar {
+  height: 6px;
+  }
+  
+  .carousel-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+  }
+/* Judul merk */
+.merk .card h3 {
+  color: #444;
+  font-size: 18px;
+  margin: 10px 0 6px;
+}
+
+/* Deskripsi produk */
+.deskripsi {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+    .selengkapnya-btn:hover {
+      background-color: #670626;
+    }
+    selengkapnya-btn {
+      background-color: #670626;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .selengkapnya-btn:hover {
+      background-color: #670626;
+    }
+    .carousel-container {
+      overflow-x: auto;
+      padding: 20px;
+      white-space: nowrap;
+    } 
+    .carousel {
+      display: flex;
+      gap: 16px;
+    }
+    .merk-card {
+      min-width: 220px;
+      flex-shrink: 0;
+      background-color: #f8f8f8;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+    } 
+/* Tentang Kami */
+    .tentang-kami h2 {
+      font-size: 28px;
+      color: #670626;
+      margin-bottom: 16px;
+    }
+    .tentang-kami {
+      background-color: whitesmoke;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 12px;
+      margin: 40px 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .tentang-kami p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.7;
+      max-width: 700px;
+      margin: 0 auto;
+    }  
+    
+    /* keranjang troli*/
+    .lihat-troli-btn {
+      display: inline-block;
+      background-color: #670626;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    
+    .lihat-troli-btn:hover {
+      background-color: #670626;
+    }
+  
+  /* kontak*/
+  header {
+  width: 100%;
+  background-color: #670626;
+  color: #670626;
+  padding: 40px 20px;
+  text-align: center;
+  }
+  .kontak-kami {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  color: #444;
+}
+.kontak-kami h2 {
+  text-align: center;
+  color: #670626;
+  margin-bottom: 24px;
+}
+.kontak-kami form {
+  display: flex;
+  flex-direction: column;
+}
+.kontak-kami label {
+  margin-top: 10px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+.kontak-kami input,
+.kontak-kami textarea {
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.kontak-kami button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #670626;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.kontak-kami button:hover {
+  background-color: #670626;
+}  
+h1 {
+  color: #670626;
+}
+
+p {
+  color: #670626;
+}
+
+header {
+  background-color: #670626;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+h2 {
+  color: #670626;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  background-color: #fff;
+  color: #444;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  font-weight: bold;
+}
+/* Login */
+.user-ikon {
+  position: absolute;
+  top: 10px;
+  right: 60px; 
+  font-size: 20px;
+  color: #670626;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.user-ikon:hover {
+  transform: scale(1.2);
+  color: #E2B091;
+}
+.kontak-kami {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  color: #444;
+}
+.kontak-kami h2 {
+  text-align: center;
+  color: #670626;
+  margin-bottom: 24px;
+}
+
+
+
+/* Container login */
+.login-container {
+  background-color: white;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  color: #444;
+}
+
+/* Label form */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Input */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Tombol login */
+button {
+  padding: 12px 20px;
+  background-color: #670626;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #670626;
+}
+
+/* Judul utama halaman jika pakai <h1> */
+h1 {
+  color: #670626;
+  text-align: center;
+}
+
+/* Link daftar */
+.daftar-link {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.daftar-link a {
+  color: #670626;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.daftar-link a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* STYLE UNTUK LOGIN PAGE   */
+.login-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.login-container h2 {
+  text-align: center;
+  color: #670626;
+  margin-bottom: 24px;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #670626;
+}
+
+.login-container input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.login-container button {
+  padding: 12px;
+  background-color: #670626;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+  background-color: #440418;
+}
+
+.login-container .daftar {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+.login-container .daftar a {
+  color: #670626;
+  text-decoration: underline;
+}
+
+
+/* Responsif */
+@media (max-width: 480px) {
+nav ul {
+  flex-direction: column;
+  align-items: center;
+}
+
+.produk {
+  width: 100%;
+}
+}

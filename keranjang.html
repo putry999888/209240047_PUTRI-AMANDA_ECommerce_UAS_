@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEAUTYS GIRL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="judul-besar">Selamat Berbelanja</h1>
+        <nav>
+            <ul>
+              <a href="index.html">Beranda</a>
+              <a href="produk.html">Produk</a>
+              <a href="kontak.html">Kontak</a>
+              <a href="keranjang.html">Keranjang</a>
+              <a href="login.html">Login</a>
+            </ul>
+          </nav> 
+    </header>
+  <h2>Troli Kamu 🛍️</h2>
+  <ul id="daftar-troli"></ul>
+  <script>
+    /* Ambil data dari localStorage */
+    let troli = JSON.parse(localStorage.getItem('troli')) || [];
+
+    /* Ambil elemen HTML tempat troli ditampilkan */
+    const daftar = document.getElementById('daftar-troli');
+
+    /* Cek apakah troli kosong */
+    if (troli.length === 0) {
+      daftar.innerHTML = "<li>Keranjang masih kosong 😢</li>";
+    } else {
+      /* Loop semua item troli dan tampilkan */
+      troli.forEach(item => {
+        const li = document.createElement('li');
+        li.innerHTML = `<strong>${item.nama}</strong><br><span>${item.harga}</span>`;
+        daftar.appendChild(li);
+      });
+    }
+  </script>
+     <footer id="kontak">
+      <p>&copy; 2025 Hak Cipta dilindungi <br> Kontak: <a href="mailto:beautysgirl@gmail.com">beautysgirl@gmail.com</a></p> 
+      <a href="tentangkami.html"> Tentang Kami</a></p>
+    </footer>
+    
+</body>
+</html>

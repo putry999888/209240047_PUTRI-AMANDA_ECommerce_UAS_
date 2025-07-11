@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEAUTYS GIRL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="judul-besar">Pilihlah Produk Terbaikmu di Beauty's Girl</h1>
+        <nav>
+          <ul>
+            <a href="index.html">Beranda</a>
+            <a href="produk.html">Produk</a>
+            <a href="kontak.html">Kontak</a>
+            <a href="keranjang.html">Keranjang</a>
+            <a href="login.html">Login</a>
+          </ul>
+        </nav> 
+        <div class="keranjang-ikon">
+            <a href="keranjang.html" title="Lihat Keranjang">🛒</a>
+        </div>
+    </header>
+    <main>
+        <section id="produk" class="produk-container">
+          <!-- Produk 1 -->
+          <div class="produk">
+            <img src="https://images.soco.id/34e49b6c-0dee-444c-bc01-7f486a880d08-image-0-1728381262432" alt="Azarine Radiant">
+            <h3>Azarine Radiant Luminous Serum</h3>
+            <p class="deskripsi">Serum untukmencerahkan wajah yang kusam dan meratakan warna kulit. Diformulasikan dengan arbutin 2% dan Chromabright untuk membuat wajah tampak lebih cerah dalam 7 hari</p>
+            <p class="harga">Rp40.000</p>
+            <button class="beli-btn"onclick="tambahKeTroli('Azarine Radiant Luminous Serum', 'Rp40.000')">Beli</button>
+          </div>
+          <!-- Produk 2 -->
+          <div class="produk">
+            <img src="data:image/jpeg;base64,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" alt="Glad2Glow Moisturizer">
+            <h3>Glad2Glow Blueberry 5% Ceramide Skin Barrier</h3>
+            <p class="deskripsi">Diformulasikan khusus untuk yang memiliki kulit sensitif dapat membersihkan debu, kotoran, dan minyak yang dilengkapi dengan kandungan Tremella dan Vitamin B5.</p>
+            <p class="harga">Rp55.000</p>
+            <button class="beli-btn"onclick="tambahKeTroli('Glad2Glow Blueberry 5% Ceramide Skin Barrier', 'Rp40.000')">Beli</button>
+          </div>
+          <!-- Produk 3 -->
+        <div class="produk">
+            <img src="https://medias.watsons.co.id/publishing/WTCID-37860-side-zoom.jpg?version=1728585268" alt="Glad2Glow Gentle Cleanser">
+            <h3>Glad2Glow Milk Amino Acids Gentle Cleaser</h3>
+            <p class="deskripsi">Glad2Glow Milk Amino Acids Gentle Cleaser ini cocok untuk semua jenis kulit, termasuk kulit sensitif. Digunakan pagi dan malam hari</p>
+            <p class="harga">Rp68.000</p>
+            <button class="beli-btn"onclick="tambahKeTroli('Glad2Glow Milk Amino Acids Gentle Cleaser', 'Rp68.000')">Beli</button>
+          </div>
+          <!-- Produk 4 -->
+          <div class="produk">
+            <img src="data:image/jpeg;base64,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" alt="Glad2Glow Centella">
+            <h3>Glad2Glow Centella Allatoin Soothing Gel Moisturizer</h3>
+            <p class="deskripsi">Glad2Glow Centella Allatoin Soothing Gel Moisturizer diformulasikan untuk mengatasi berbagai permasalahan kulit, mulai dari jerawat, kulit kusam dan melindungi skin barrier</p>
+            <p class="harga">Rp58.000</p>
+            <button class="beli-btn"onclick="tambahKeTroli('Glad2Glow Centella Allatoin Soothing Gel Moisturizer', 'Rp58.000')">Beli</button>
+          </div>
+           <!-- Produk 5 -->
+           <div class="produk">
+            <img src="https://topgolf.co.id/cdn/shop/files/NPURECICABEATTHESUNSPRAYML.jpg?v=1728299544" alt="NPURE SUN SPRAY">
+            <h3>NPURE CICA BEAT THE SUN SPRAY SPF 50+ PA++++</h3>
+            <p class="deskripsi">Sunscreen spray yang praktis untuk melindungi kulit dari sinar UVA dan UVB. Dilengkapi dengan SPF 50+ dan PA++++ diformulasikan lengkap dengan 5x UV Protection</p>
+            <p class="harga">Rp85.000</p>
+            <button class="beli-btn"onclick="tambahKeTroli('NPURE CICA BEAT THE SUN SPRAY SPF 50+ PA++++', 'Rp85.000')">Beli</button>
+          </div>
+          <!-- Produk 6 -->
+          <div class="produk">
+            <img src="https://image.astronauts.cloud/product-images/2024/9/8997240891203NPURECicaAcneClearFoamFacialWash100ml1_789fab77-643f-4d9a-b229-9f99483fe0e7_900x900.png" alt="NPURE FACIAL WASH">
+            <h3>NPURE Cica Acne Clear Foam Facial Wash 100ml</h3>
+            <p class="deskripsi">NPURE Centella Asiatica Acne Clear Foam cocok untuk kulit berjerawat serta kulit terasa halus dan segar.</p>
+            <p class="harga">Rp98.000</p>
+            <button class="beli-btn"onclick="tambahKeTroli('NPURE Cica Acne Clear Foam Facial Wash 100ml', 'Rp98.000')">Beli</button>
+          </div>
+          <!-- Produk 7 -->
+          <div class="produk">
+            <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2024/1/30/758a1ff5-f775-4ba0-a715-4dd14eeae20b.jpg" alt="Madame Gie Lip Balm">
+            <h3>Madame Gie Plump Balm </h3>
+            <p class="deskripsi">Madame Gie Plump Balm solusi untuk yang memiliki permasalahan bibir kering dan pecah-pecah saat menggunakan pewarna bibir</p>
+            <p class="harga">Rp28.500</p>
+            <button class="beli-btn"onclick="tambahKeTroli('Madame Gie Plump Balm', 'Rp28.500')">Beli</button>
+          </div>
+          <!-- Produk 8 -->
+          <div class="produk">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeV7g7n2_nZR1BBYY60E9BGRO1VuxdDzKv6w&s" alt="Dazzle me Spray">
+            <h3>Dazzle Me Get a Grip! Matte  Fix and Dewy Fix</h3>
+            <p class="deskripsi">Dazzle me setting spray Dewy fix cocok untuk kulit kering. Dazzle Me Matte Finish cocok untuk kulit yang berminyak. Mengunci makeup karena sudah dilengkapi 4x Hydrating Ingredients</p>
+            <p class="harga">Rp50.000</p>
+            <button class="beli-btn"onclick="tambahKeTroli('Dazzle Me Get a Grip! Matte  Fix and Dewy Fix', 'Rp50.000')">Beli</button>
+          </div>
+          <!-- Produk 9 -->
+          <div class="produk">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwll4sbp9-pEX_v7iUoMGSiV8eMXc3OdwKug&s" alt="DAZZLE ME TINT">
+            <h3>Dazzle Me Ink-Licious Lip Tint</h3>
+            <p class="deskripsi">Hadir dalam varian warna yang cerah natural, mempercantik sekaligus melembabkan & merawat bibirmu secara ekstra karena kandungan Hyaluronic Acid & Castor Oil.</p>
+            <p class="harga">Rp35.000</p>
+            <button class="beli-btn"onclick="tambahKeTroli('Dazzle Me Ink-Licious Lip Tint', 'Rp35.000')">Beli</button>
+          </div>
+          <!-- Produk 10 -->
+          <div class="produk">
+            <img src="https://www.sociolla.com/cdn-cgi/image/w=244,format=auto,dpr=1.45/https://images.soco.id/6dcfa68a-e84b-49c3-95e6-ad1c76a5c472-image-0-1724212581335" alt="Skintific Retinol">
+            <h3>Skintific Retinol Skin Renewal Moisturizer Set</h3>
+            <p class="deskripsi">Skintific Retinol Skin Renewal cocok untuk Anti-Aging krim wajah yang menghaluskan tekstur kulit dan melembutkan.</p>
+            <p class="harga">Rp154.000</p>
+            <button class="beli-btn"onclick="tambahKeTroli('Skintific Retinol Skin Renewal Moisturizer Set', 'Rp154.000')">Beli</button>
+          </div>
+          <!-- Produk 11 -->
+          <div class="produk">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPT9VOVytqmPwi5RQ3aCJAnMR1-pEUN9kKlg&s" alt="Skintific Moisturizer Serum">
+            <h3>Skintific Moisturizer Calming & Sooting Skin 5% Panthenol</h3>
+            <p class="deskripsi"> Mengandung 5% Panthenol dan Ectoin, moisturizer ini efektif membantu meredakan kemerahan dan menenangkan kulit berjerawat.</p>
+            <p class="harga">203.000</p>
+            <button class="beli-btn"onclick="tambahKeTroli('Skintific Moisturizer Calming & Sooting Skin 5% Panthenol', 'Rp203.000')">Beli</button>
+          </div>
+          <!-- Produk 12 -->
+          <div class="produk">
+            <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//catalog-image/104/MTA-137794054/hanasui_hanasui_perfect_cheek_blush-go_full01_k68jtbjr.jpg" alt="HANASUI BLUSH&GO">
+            <h3>Hanasui Blush&Go Perfect Cheek</h3>
+            <p class="deskripsi">Hanasui Perfect Cheel Blush & Go adalah perona pipi yang praktis dan siap pakai dengan cepat menyatu pada kulit</p>
+            <p class="harga">Rp35.000</p>
+            <button class="beli-btn"onclick="tambahKeTroli('Hanasui Blush&Go Perfect Cheek', 'Rp35.000')">Beli</button>
+            </div>
+            <!-- Produk 13 -->
+          <div class="produk">
+            <img src="https://images.tokopedia.net/img/cache/700/product-1/2020/5/20/576214161/576214161_9d78e66c-d7c1-4c6e-9547-177c494e7479_800_800.jpg" alt="Innisfree">
+            <h3>Innisfree Green Tea Seed Serum 80ml</h3>
+            <p class="deskripsi">Serum yang mampu menghidrasikan kulit wajah sehingga melembabkan dan memiliki efek glowing.</p>
+            <p class="harga">Rp245.000</p>
+            <button class="beli-btn"onclick="tambahKeTroli('Innisfree Green Tea Seed Serum 80ml', 'Rp245.000')">Beli</button>
+          </div>
+          <!-- Produk 14 -->
+          <div class="produk">
+            <img src="https://id.ozcosmetics.com/prodimgs/202308/311178.jpg" alt="Innisfree Black Tea">
+            <h3>Innisfree Black Tea Youth Enchancing Treatment</h3>
+            <p class="deskripsi"> Innisfree Black Tea cocok untuk perawatan intensif pada malam hari. Menjaga kekencangan kulit wajah, membuat kulit tampak lebih bercahaya</p>
+            <p class="harga">Rp350.000</p>
+            <button class="beli-btn"onclick="tambahKeTroli('Innisfree Black Tea Youth Enchancing Treatment', 'Rp350.000')">Beli</button>
+          </div>
+        </section>
+      </main>
+    
+      <footer id="kontak">
+        <p>&copy; 2025 Hak Cipta dilindungi <br> Kontak: <a href="mailto:beautysgirl@gmail.com">beautysgirl@gmail.com</a></p> 
+        <a href="tentangkami.html"> Tentang Kami</a></p>
+      </footer>
+      <script src="script.js"defer></script>
+
+</body>
+</html>
